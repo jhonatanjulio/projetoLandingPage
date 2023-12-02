@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="./css/estrutura.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/design-section.css">
 </head>
 <body>
     <header>
         <div class="content-header">
-
             <div class="flex-mobile">
                 <div class="logo">
                     <img src="./img/header/logo-liverpool.png" alt="Logo Liverpool">
@@ -28,7 +28,7 @@
                 <div class="mobile-menu-fechar">
                     <div class="line1"></div>
                     <div class="line2"></div>
-                </div> <!-- mobile-menu -->
+                </div> <!-- mobile-menu-fechar -->
                 <nav>
                     <ul>
                         <li><a href="./">Início</a></li>
@@ -74,7 +74,35 @@
     </main> <!-- main -->
 
     <section class="design">
-        <h1>Design</h1>
+        <div class="design-content">
+
+            <div class="linha-1">
+                <div>
+                    <!-- <img src="./img/section-1/amostra-camisa-1.jpg" alt="Camisa Liverpool Away 21/22 visão de frente."> -->
+                    <picture>
+                        <source media="(max-width:720px)" srcset="./img/section-1/amostra-camisa-1-400px.jpg">
+                        <img class="linha-1-img" src="./img/section-1/amostra-camisa-1-500px.jpg" alt="Camisa Liverpool Away 21/22 visão de frente.">
+                    </picture>
+                </div> <!-- linha-1-img -->
+                <div class="linha-1-texto">
+                    <p>Nossa camisa em algodão é cuidadosamente confeccionada para proporcionar uma experiência única. Feita com o tecido mais suave e respirável, cada detalhe é pensado para elevar seu conforto a novas alturas.</p>
+                </div> <!-- linha-1-texto -->
+            </div> <!-- linha-1 -->
+
+            <div class="linha-2">
+                <div class="div-img-2">
+                    <!-- <img src="./img/section-1/amostra-camisa-2.jpg" alt="Camisa Liverpool Away 21/22 visão de costas."> -->
+                    <picture>
+                        <source media="(max-width:720px)" srcset="./img/section-1/amostra-camisa-2-400px.jpg">
+                        <img class="linha-2-img" src="./img/section-1/amostra-camisa-2-500px.jpg" alt="Camisa Liverpool Away 21/22 visão de costas.">
+                    </picture>
+                </div> <!-- div-img-2 -->
+                <div class="linha-2-texto">
+                    <p>Desfrute de movimentos livres e conforto excepcional com a tecnologia DryFit. Adaptável ao seu corpo, nossa camisa é o aliado perfeito, oferecendo flexibilidade incomparável em treinos intensos e competições emocionantes.</p>
+                </div> <!-- linha-2-texto -->
+            </div> <!-- linha-2 -->
+
+        </div> <!-- design-content -->
     </section> <!-- design -->
 
     <section class="formulario">

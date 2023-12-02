@@ -1,0 +1,80 @@
+/* estilizando o flex container do design: */
+.design-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5vw;
+}
+
+/* estilizando o flex-container das linhas: */
+.linha-1, .linha-2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0px;
+}
+
+/* estilizando a div das imagens */
+.linha-1-img, .linha-2-img {
+    width: 500px;
+    height: 500px;
+    background-color: #E7E6DF;
+    border-radius: 50%;
+    box-shadow: -5px 5px 0px 2px #F17D6A;
+}
+
+/* estilizando o texto das linhas: */
+.linha-1-texto, .linha-2-texto {
+    width: 500px;
+    font-weight: bold;
+    color: #E7E6DF;
+}
+
+
+/* invertendo a ordem da segunda linha */
+.div-img-2{
+    order: 1;
+}
+
+.linha-2-texto {
+    order: 0;
+    text-align: right;
+}
+
+/* responsividade */
+@media (max-width: 720px) {
+    /* estilizando o flex-container das linhas: */
+    .linha-1, .linha-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 50px 0px;
+        height: 75vh;
+    }
+
+    /* estilizando a div das imagens */
+    .linha-1-img, .linha-2-img {
+        width: 300px;
+        height: 300px;
+        background-color: #E7E6DF;
+        border-radius: 50%;
+        box-shadow: -5px 5px 0px 2px #F17D6A;
+    }
+
+    /* estilizando o texto das linhas: */
+    .linha-1-texto, .linha-2-texto {
+        width: 300px;
+        height: 300px;
+        text-align: justify;
+    }
+
+
+    /* invertendo a ordem da segunda linha */
+    .linha-2-img {
+        order: 0;
+    }
+
+    .linha-2-texto {
+        order: 1;
+    }
+}
