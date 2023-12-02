@@ -1,0 +1,58 @@
+/* import da fonte */
+@import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap'); 
+/* font-family: 'Saira Semi Condensed', sans-serif; */
+
+/* reset css */
+* { 
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box
+}
+
+/* tamanhos (provisório, pode apagar depois) */
+header {
+    height: 8vh;
+}
+
+main {
+    position: relative;
+    height: 92vh;
+}
+
+.design {
+    height: 100vh;
+}
+
+.formulario {
+    height: 50vh;
+}
+
+footer {
+    height: 50vh;
+}
+
+/* estilização das estruturas: */
+body {
+    background-color: #E7E6DF;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    font-size: 32px;
+}
+
+.divisor-onda > svg {
+    position: absolute;
+    bottom: -1px;
+    filter: drop-shadow(0px -1.5vw 0px #F17D6A);
+}
+
+.design {
+    background-color: #113940;
+    box-shadow: 0px 10px 0px 0px #F17D6A;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+footer {
+    background-color: #113940;
+    box-shadow: 0px -10px 0px 0px #F17D6A;
+}
