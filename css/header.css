@@ -43,18 +43,14 @@ header {
 /* botão compre já */
 .nav-bar button{
     background-color: #113940;
-    padding: 5px 20px;
-    border-radius: 30px;
+    margin: 20px auto;
     width: 150px;
     height: 50px;
     margin-left: 20px;
-    box-shadow: -2px 2px 0px 1px #F17D6A;
 }
 
 .nav-bar button > p{
-    font-family: 'Saira Semi Condensed', sans-serif;
     font-size: 1.5em;
-    font-weight: bold;
     color: #E7E6DF;
 }
 
@@ -172,17 +168,10 @@ header {
     /* botão compre já */
     .nav-bar button{
         background-color: #E7E6DF;
-        padding: 5px 20px;
-        border-radius: 30px;
-        width: 150px;
-        height: 50px;
-        box-shadow: -2px 2px 0px 1px #F17D6A;
         margin: 20px auto;
-        padding: 20px auto;
     }
 
-    .nav-bar button > p{
-        
+    .nav-bar button > p{    
         color: #113940;
     }
 
