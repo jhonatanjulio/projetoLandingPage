@@ -53,6 +53,9 @@ footer {
         font-size: 1.6em;
     }
     
+    .design {
+        height: 190vh;
+    }
 
     /* esconde a onda desktop */
     .divisor-onda-desktop {

@@ -75,7 +75,7 @@ header {
 /* responsividade */
 @media (max-width: 720px) {
     body {
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     /* margem da header mobile */
