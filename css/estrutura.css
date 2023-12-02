@@ -7,42 +7,30 @@
     padding: 0;
     margin: 0;
     border: 0;
-    box-sizing: border-box
-}
-
-/* tamanhos (provisório, pode apagar depois) */
-header {
-    height: 8vh;
-}
-
-main {
-    position: relative;
-    height: 92vh;
-}
-
-.design {
-    height: 100vh;
-}
-
-.formulario {
-    height: 50vh;
-}
-
-footer {
-    height: 50vh;
+    box-sizing: border-box;
 }
 
 /* estilização das estruturas: */
 body {
     background-color: #E7E6DF;
     font-family: 'Saira Semi Condensed', sans-serif;
-    font-size: 32px;
+    font-size: 2em;
 }
 
-.divisor-onda > svg {
+main {
+    position: relative;
+    height: 50vh;
+}
+
+.divisor-onda-desktop > svg {
     position: absolute;
-    bottom: -1px;
+    bottom: -1vh;
     filter: drop-shadow(0px -1.5vw 0px #F17D6A);
+    z-index: -1;
+}
+
+.divisor-onda-mobile {
+    display: none;
 }
 
 .design {
@@ -55,4 +43,31 @@ body {
 footer {
     background-color: #113940;
     box-shadow: 0px -10px 0px 0px #F17D6A;
+}
+
+/* responsividade */
+
+@media (max-width: 720px) {
+    /* configurando o tamanho da fonte mobile */
+    body {
+        font-size: 1.6em;
+    }
+    
+
+    /* esconde a onda desktop */
+    .divisor-onda-desktop {
+        display: none;
+    }
+
+    /* ativa a onda mobile */
+    .divisor-onda-mobile {
+        display: block;
+    }
+
+    .divisor-onda-mobile > svg {
+        position: absolute;
+        bottom: -1vh;
+        filter: drop-shadow(0px -1.5vw 0px #F17D6A);
+        z-index: -1;
+    }
 }

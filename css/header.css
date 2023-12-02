@@ -1,0 +1,192 @@
+/* configurando tamanho da logo */
+.logo > img {
+    max-width: 15vw;
+    max-height: 15vh;
+}
+
+header {
+    padding: 10px 0px;
+}
+
+/* margem do content da header desktop | margem padrão: 5vh left e right */
+.content-header {
+    display: flex;
+    margin: 0 5vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar {
+    display: flex;
+    width: 589px;
+    align-items: center;
+}
+
+.nav-bar nav > ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-bar nav > ul > li {
+    margin: 0 20px;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #113940;
+    text-decoration: underline;
+}
+
+.nav-bar nav > ul > li > a {
+    text-decoration: none;
+    color: #113940;
+}
+
+/* botão compre já */
+.nav-bar button{
+    background-color: #113940;
+    padding: 5px 20px;
+    border-radius: 30px;
+    width: 150px;
+    height: 50px;
+    margin-left: 20px;
+    box-shadow: -2px 2px 0px 1px #F17D6A;
+}
+
+.nav-bar button > p{
+    font-family: 'Saira Semi Condensed', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #E7E6DF;
+}
+
+/* criando o hamburguer menu */
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 40px;
+    height: 5px;
+    background-color: #113940;
+    margin: 8px;
+    border-radius: 10px;
+}
+
+/* responsividade */
+@media (max-width: 720px) {
+    body {
+        overflow: hidden;
+    }
+
+    /* margem da header mobile */
+    .content-header {
+        margin: 0 10vw;
+    }
+
+    /* invertendo a posição da logo com o menu hamburguer */
+    .flex-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        order: 1;
+    }
+
+    .mobile-menu {
+        order: 0;
+        display: block;
+    }
+    
+    .content-header {
+        display: block;
+    }
+
+    header {
+        position: relative;
+    }
+
+    /* criando o hamburguer menu fechar (X) */
+    .mobile-menu-fechar {
+        cursor: pointer;
+        padding: 20px 0px;
+        width: 100%;
+        border-bottom: 1px solid #E7E6DF;
+    }
+
+    .mobile-menu-fechar div {
+        width: 40px;
+        height: 5px;
+        background-color: #E7E6DF;
+        margin: 8px;
+        border-radius: 10px;
+    }
+    .mobile-menu-fechar .line1{
+        transform: rotate(-45deg) translate(-1px, 7px);
+    }
+
+    .mobile-menu-fechar .line2{
+        transform: rotate(45deg) translate(-2px, -8px);
+    }
+
+    .nav-bar {
+        transform: translateX(-120%);
+        transition: transform 0.3s ease-in;
+        position: absolute;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        align-items: start;
+        max-width: 70vw;
+        height: 100vh;
+        background-color: #113940;
+        box-shadow: 2px 0px 13px 6px rgba(0,0,0,0.75);
+        z-index: 1000;
+    }
+
+    .active {
+        transform: translateX(0);
+    }
+
+    .nav-bar nav {
+        width: 100%;
+    }
+
+    .nav-bar nav > ul{
+        flex-direction: column;
+    }
+
+    .nav-bar nav > ul > li {
+        padding: 20px;
+        font-size: 0.9em;
+        font-weight: bold;
+        border-bottom: 1px solid #E7E6DF;
+    }
+
+    .nav-bar nav > ul > li > a {
+        text-decoration: none;
+        color: #E7E6DF;
+    }
+    
+    /* botão compre já */
+    .nav-bar button{
+        background-color: #E7E6DF;
+        padding: 5px 20px;
+        border-radius: 30px;
+        width: 150px;
+        height: 50px;
+        box-shadow: -2px 2px 0px 1px #F17D6A;
+        margin: 20px auto;
+        padding: 20px auto;
+    }
+
+    .nav-bar button > p{
+        
+        color: #113940;
+    }
+
+
+    /* reconfigurando a nav-bar para o mobile */
+
+}
