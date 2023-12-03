@@ -1,11 +1,20 @@
-.formulario div {
-    margin: 30px;
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto ;
+    margin: 25px;
+    font-size: 0.7em;
     
 }
 
- div input, div label  {
-    display: block;
-    border-radius: 10px;
+.formulario div {
+    margin: 30px 
+} 
+
+ .formulario div input, div label  {
+    display: flex;
+    border-radius: 15px;
     width: 400px;
     height: 40px;
 }
@@ -17,17 +26,6 @@
 
 .formulario input{
     border: 3px solid #113940;
-}
-
-.formulario{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 85vh;
-    margin: 0;
-    font-size: 0.7em;
-    
-    
 }
 
 #submit{
@@ -44,3 +42,30 @@ textarea{
     border: 3px solid #113940;
 }
 
+@media screen and (max-width: 720px){
+
+    .formulario div input, div label{
+        display: flex;
+        border-radius: 15px;
+        margin-left: 80px;
+        width: 300px;
+        height: 40px;
+    }
+
+    textarea{
+        width: 65% ;  
+        margin-left: 80px;
+    }
+    
+    #submit{
+        margin-left: 37%;
+    }
+}
+
+@media screen and (max-width: 574px){
+
+    textarea{
+        width: 67% ;  
+        margin-left: 80px;
+    }
+}
