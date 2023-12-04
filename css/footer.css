@@ -1,0 +1,45 @@
+.content-footer{
+    margin: 0 5vw;
+    color: #E7E6DF;
+    height: auto;
+}
+
+.redes-sociais{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-autores{
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.redes-sociais-img{
+    display: flex;
+    gap: 30px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+@media screen and (max-width: 720px){
+    .content-footer{
+        height: auto;
+    }
+
+    .redes-sociais {
+        margin: 50px 0;
+    }
+
+    .footer-descricao{
+        text-align: center;
+        font-size: 0.8em;
+    }
+
+    .footer-autores{
+        text-align: center;
+        font-size: 0.6em;
+    }
+}

@@ -2,8 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto ;
-    margin: 25px;
+    height: auto;
+    margin: 25px 5vw;
     font-size: 0.7em;
     
 }
@@ -48,12 +48,12 @@ textarea{
         display: flex;
         border-radius: 15px;
         margin-left: 80px;
-        width: 300px;
+        width: 75vw;
         height: 40px;
     }
 
     textarea{
-        width: 65% ;  
+        width: 75vw;  
         margin-left: 80px;
     }
     
@@ -61,11 +61,11 @@ textarea{
         margin-left: 37%;
     }
 }
-
+/* 
 @media screen and (max-width: 574px){
 
     textarea{
         width: 67% ;  
         margin-left: 80px;
     }
-}
+} */
