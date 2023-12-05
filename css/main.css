@@ -40,12 +40,6 @@
 }
 
 @media (max-width: 720px) {
-
-    .main-content-text-mobile{
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-
     .main-content-text-mobile{
         height: 46vh;
         display: flex;
