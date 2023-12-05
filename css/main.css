@@ -1,9 +1,10 @@
 .main-content{
     margin: 0 5vh;
-    width: 90vw;
+    margin-top: 5vh;
+    height: 80vh;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: start;
 }
 
 .main-content h1{
@@ -21,7 +22,17 @@
     font-size: 1.2em;
     width: 400px;
     height: 90px;
+    transition: all 0.3s;
 }
+
+.main-content button:hover {
+    background-color: #F17D6A;
+    width: 410px;
+    height: 100px;
+    color: #113940;
+    box-shadow: -2px 2px 0px 1px #113940;
+}
+
 
 .main-content img{
     width: 25vw;
@@ -30,7 +41,7 @@
 .main-content-text{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 50px;
     width: 50vw;
     height: 50vh;
 }
@@ -40,11 +51,15 @@
 }
 
 @media (max-width: 720px) {
+    .main-content {
+        height: auto;
+    }
+
     .main-content-text-mobile{
-        height: 46vh;
+        height: auto;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        gap: 50px;
         align-items: center;
     }
 
@@ -65,7 +80,7 @@
     .main-content-text-mobile p{
         width: 80vw;
         color: #E7E6DF;
-        text-align: justify;
+        text-align: center;
     }
 
     .main-content img{
@@ -74,31 +89,5 @@
 
     .main-content-text{
         display: none;
-    }
-}
-
-@media screen and (max-width: 470px) {
-    .main-content-text-mobile h1{
-        font-size: 1.4em;
-    }
-
-    .main-content-text-mobile p{
-        font-size: 0.8em;
-    }
-}
-
-@media screen and (max-width: 390px) {
-    .main-content-text-mobile h1{
-        font-size: 1.2em;
-    }
-
-    .main-content-text-mobile p{
-        font-size: 0.7em;
-    }
-
-    .main-content-text-mobile button{
-        font-size: 0.7em;
-        width: 200px;
-        height: 60px;
     }
 }
