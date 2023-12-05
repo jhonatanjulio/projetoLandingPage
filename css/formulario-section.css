@@ -1,71 +1,52 @@
-.formulario{
+.formulario-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+ .input {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    margin: 25px 5vw;
-    font-size: 0.7em;
+    flex-direction: column;
     
 }
+.input label{
+    margin:15px;
+}
 
-.formulario div {
-    margin: 30px 
-} 
-
- .formulario div input, div label  {
-    display: flex;
+.input input {
+    height: 3.5em;
+    width: 50em;
     border-radius: 15px;
-    width: 400px;
-    height: 40px;
-}
-
-.formulario h1{
-    text-align: center;
-    font-size: 1.5em;
-}
-
-.formulario input{
     border: 3px solid #113940;
 }
 
-#submit{
-    padding: 13px 40px;
-    border-radius: 25px;
+.input textarea{
+    height: 15em;
+    width: 50em;
+    border-radius: 15px;
+    border: 3px solid #113940;
+    resize: none;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+}
+
+.input input[type=submit]{
+    margin: 30px;
+    align-self: center;
+    max-width: 150px;
+    padding: 13px 20px;
+    border-radius: 27px;
     box-shadow: -3px 2px 0px 2px rgba(241,125,105,1);
     background-color: #113940;
     color: white;
-    margin-left: 160px;
-}
+    font-size: 0.7em; 
+}  
 
-textarea{
-    border-radius: 20px;
-    border: 3px solid #113940;
-}
-
-@media screen and (max-width: 720px){
-
-    .formulario div input, div label{
-        display: flex;
-        border-radius: 15px;
-        margin-left: 80px;
-        width: 75vw;
-        height: 40px;
-    }
-
-    textarea{
-        width: 75vw;  
-        margin-left: 80px;
-    }
+ @media screen and (max-width: 720px){
     
-    #submit{
-        margin-left: 37%;
-    }
-}
-/* 
-@media screen and (max-width: 574px){
-
-    textarea{
-        width: 67% ;  
-        margin-left: 80px;
-    }
-} */
+ }
