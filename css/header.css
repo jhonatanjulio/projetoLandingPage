@@ -1,5 +1,5 @@
 /* configurando tamanho da logo */
-.logo > img {
+.logo a > img {
     max-width: 15vw;
     max-height: 15vh;
 }
@@ -18,40 +18,54 @@ header {
 
 .nav-bar {
     display: flex;
-    width: 589px;
     align-items: center;
+    gap: 30px;
 }
 
 .nav-bar nav > ul {
     display: flex;
     list-style: none;
+    gap: 30px;
 }
 
 .nav-bar nav > ul > li {
-    margin: 0 20px;
     font-size: 0.9em;
     font-weight: bold;
     color: #113940;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .nav-bar nav > ul > li > a {
     text-decoration: none;
     color: #113940;
+    transition: all 0.3s;
+}
+
+.nav-bar nav > ul > li > a:hover{
+    color: #F17D6A;
+    text-decoration: none;
 }
 
 /* botão compre já */
 .nav-bar button{
     background-color: #113940;
-    margin: 20px auto;
     width: 150px;
     height: 50px;
-    margin-left: 20px;
 }
+
+.nav-bar button:hover {
+    background-color: #F17D6A;
+    color: #113940;
+} 
+
+.nav-bar button > p:hover {
+    color: #113940;
+} 
 
 .nav-bar button > p{
     font-size: 1.5em;
     color: #E7E6DF;
+    
 }
 
 /* criando o hamburguer menu */

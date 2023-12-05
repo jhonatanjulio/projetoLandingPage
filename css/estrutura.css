@@ -19,19 +19,26 @@ body {
 
 main {
     position: relative;
-    height: 85vh;
-    margin-top: 20px;
+    height: auto;
 }
 
 button{
     font-family: 'Saira Semi Condensed', sans-serif;
     font-weight: bold;
     padding: 5px 20px;
-    border-radius: 30px;
+    border-radius: 60px;
     width: 150px;
     height: 50px;
     box-shadow: -2px 2px 0px 1px #F17D6A;
     padding: 20px auto;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background-color: #F17D6A;
+    color: #113940;
+    box-shadow: -2px 2px 0px 1px #113940;
 }
 
 .divisor-onda-desktop > svg {
@@ -74,6 +81,9 @@ footer {
     }
     
     .design {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
         height: auto;
         position: relative;
     }
