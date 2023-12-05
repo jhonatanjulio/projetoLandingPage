@@ -23,7 +23,7 @@ main {
     margin-top: 20px;
 }
 
-button{
+.button{
     font-family: 'Saira Semi Condensed', sans-serif;
     font-weight: bold;
     padding: 5px 20px;
