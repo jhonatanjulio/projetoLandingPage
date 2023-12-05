@@ -3,6 +3,9 @@
     display: flex;
     flex-direction: column;
     margin: 0 5vw;
+    justify-content: space-around;
+    height: 150vh;
+    padding-bottom: 10vh;
 }
 
 /* estilizando o flex-container das linhas: */
@@ -10,7 +13,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 50px 0px;
 }
 
 /* estilizando a div das imagens */
@@ -48,7 +50,6 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        margin: 50px 0px;
         height: 70vh;
     }
 
@@ -78,6 +79,8 @@
     }
 
     .design-content{
-        padding-bottom: 60px;
+        justify-content: space-around;
+        height: 210vh;
+        padding: 5vh 0;
     }
 }
