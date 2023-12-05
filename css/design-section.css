@@ -19,7 +19,6 @@
 /* estilizando a div das imagens */
 .linha-1-img, .linha-2-img {
     width: 500px;
-    height: 500px;
     background-color: #E7E6DF;
     border-radius: 50%;
     box-shadow: -5px 5px 0px 2px #F17D6A;
@@ -57,8 +56,7 @@
 
     /* estilizando a div das imagens */
     .linha-1-img, .linha-2-img {
-        width: 300px;
-        height: 300px;
+        width: 50vw;
         background-color: #E7E6DF;
         border-radius: 50%;
         box-shadow: -5px 5px 0px 2px #F17D6A;
