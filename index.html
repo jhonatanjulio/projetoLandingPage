@@ -85,7 +85,7 @@
                     <p>Mostre ao mundo qual time faz seu coração bater mais forte! Apresentamos com orgulho a Camisa Oficial do Liverpool Away 21/22, feita sob medida para os torcedores que vivem e respiram a paixão pelo futebol. Você nunca andará sozinho.</p>
                 </div>
                 <div>
-                    <button>Garanta a sua Já!</button>
+                    <button class="button">Garanta a sua Já!</button>
                 </div>
             </div>
             <div class="linha-1">
@@ -123,23 +123,23 @@
             <form action="registro.php" method="get">
 
                 <div class="input">
-                    <label>Nome:</label>
-                    <input type="text">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" placeholder="Digite seu nome" required>
                 </div>
 
                 <div class="input">
-                    <label>Seu E-mail:</label>
-                    <input type="text">
+                    <label for="email">E-mail:</label>
+                    <input type="text" name="email" placeholder="Digite seu e-mail" required>
                 </div>
 
                 <div class="input">
-                    <label for="mensagem">Escreva aqui:</label> 
-                    <textarea  name="mensagem"></textarea>
+                    <label for="mensagem">Mensagem:</label> 
+                    <textarea name="mensagem" placeholder="Digite sua mensagem" required></textarea>
                 </div>
                 
                 <div class="input">
-                <input id="submit" class="button" type="submit" value="Enviar">
-            </div>
+                    <input id="submit" class="button" type="submit" value="Enviar">
+                </div>
             </form>
         </div>
     </section> <!-- formulario -->

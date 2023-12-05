@@ -3,8 +3,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 100px 0;
 }
 
+.formulario-content h1{
+    color: #113940;
+  }
 
  .input {
     display: flex;
@@ -12,22 +16,31 @@
     
 }
 .input label{
-    margin:15px;
+    margin: 10px 10px;
+    color: #113940;
+    font-size: 0.8em;
+    font-weight: bold;
 }
 
 .input input {
     height: 5vh;
     width: 50vw;
     border-radius: 15px;
-    border: 3px solid #113940;
+    border: 2px solid #113940;
+    padding: 10px;
 }
 
 .input textarea{
     height: 25vh;
     width: 50vw;
     border-radius: 15px;
-    border: 3px solid #113940;
+    border: 2px solid #113940;
     resize: vertical;
+    padding: 10px;
+}
+
+.input input:focus, .input textarea:focus {
+    border: 3px solid #113940;
 }
 
 .input{
@@ -40,12 +53,19 @@
     margin: 30px;
     align-self: center;
     max-width: 150px;
-    height: 50px;
+    height: 57px;
     border-radius: 27px;
     background-color: #113940;
     color: white;
-    font-size: 0.7em; 
-}  
+    font-size: 0.7em;
+    border: none;
+} 
+
+.input input[type=submit]:hover {
+    background-color: #F17D6A;
+    color: #113940;
+    box-shadow: -2px 2px 0px 1px #113940;
+}
 
  @media screen and (max-width: 720px){
     
