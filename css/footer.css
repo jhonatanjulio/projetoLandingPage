@@ -19,6 +19,10 @@
     font-size: 0.8em;
 }
 
+.redes-sociais p{
+    margin-bottom: 10px;
+}
+
 .redes-sociais-img{
     display: flex;
     gap: 30px;
@@ -29,6 +33,10 @@
 }
 
 @media screen and (max-width: 720px){
+    .redes-sociais p {
+        text-align: center;
+    }
+
     .content-footer{
         height: auto;
         

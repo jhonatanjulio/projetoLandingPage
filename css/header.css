@@ -148,7 +148,7 @@ header {
         left: 0;
         flex-direction: column;
         align-items: start;
-        max-width: 70vw;
+        width: 70vw;
         height: 100vh;
         background-color: #113940;
         box-shadow: 2px 0px 13px 6px rgba(0,0,0,0.75);
