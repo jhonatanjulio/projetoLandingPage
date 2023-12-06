@@ -6,6 +6,16 @@
 
 header {
     padding: 10px 0px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.rolagem {
+    background-color: #E7E6DF;
+    border-bottom: 3px solid #F17D6A;
+
 }
 
 /* margem do content da header desktop | margem padrão: 5vh left e right */
@@ -113,10 +123,6 @@ header {
         display: block;
     }
 
-    header {
-        position: relative;
-    }
-
     /* criando o hamburguer menu fechar (X) */
     .mobile-menu-fechar {
         cursor: pointer;
@@ -183,6 +189,7 @@ header {
     .nav-bar button{
         background-color: #E7E6DF;
         margin: 20px auto;
+        margin-left: 10px;
     }
 
     .nav-bar button > p{    

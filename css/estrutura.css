@@ -79,6 +79,7 @@ footer {
     /* configurando o tamanho da fonte mobile */
     body {
         font-size: 1.6em;
+        overflow: auto;
     }
 
     main{
@@ -110,5 +111,9 @@ footer {
         filter: drop-shadow(0px -1.5vw 0px #F17D6A);
         z-index: -1;
         margin: 0;
+    }
+
+    button:hover {
+        box-shadow: -2px 2px 0px 1px #F17D6A;
     }
 }

@@ -107,4 +107,8 @@
         width: 100px;
         height: 6vh;
     }
+
+    .main-content button:hover {
+        box-shadow: -2px 2px 0px 1px #F17D6A;
+    }
 }
