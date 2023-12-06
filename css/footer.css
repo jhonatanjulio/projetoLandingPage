@@ -26,6 +26,13 @@
 .redes-sociais-img{
     display: flex;
     gap: 30px;
+    transition: all 0.3s;
+}
+
+.redes-sociais-img img:hover {
+    background-color: #F17D6A;
+    border-radius: 10px;
+    transition: all 0.3s;
 }
 
 .bold{
