@@ -30,10 +30,10 @@
     transition: all 0.3s;
 }
 
-.linha-1-img:hover, .linha-2-img:hover {
+/* .linha-1-img:hover, .linha-2-img:hover {
     width: 525px;
     transition: all 0.3s;
-}
+} */
 
 /* estilizando o texto das linhas: */
 .linha-1-texto, .linha-2-texto {
@@ -70,14 +70,20 @@
         background-color: #E7E6DF;
         border-radius: 50%;
         box-shadow: -5px 5px 0px 2px #F17D6A;
+        transition: none;
     }
 
     /* estilizando o texto das linhas: */
     .linha-1-texto, .linha-2-texto {
         width: 65vw;
         text-align: center;
+        
     }
 
+    .linha-1-img:hover, .linha-2-img:hover {
+       width: 50vw;
+       transition: none;
+    }
 
     /* invertendo a ordem da segunda linha */
     .linha-2-img {

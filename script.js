@@ -14,10 +14,15 @@ mobileMenu.addEventListener("click", () => {
     
 });
 
-document.addEventListener('scroll', ()=>{ //bloqueia o scroll quando aberto a navbar no mobile
+document.addEventListener('scroll', () => { //bloqueia o scroll quando aberto a navbar no mobile
     if(navBar.classList.contains(activeClass)) {
         setTopo();
     }
+});
+
+window.addEventListener("scroll", () => {
+    let header = document.querySelector("#header");
+    header.classList.toggle("rolagem", window.scrollY > 50);
 });
 
 closeMenu.addEventListener("click", () => navBar.classList.remove('active'));

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/footer.css">
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="content-header">
             <div class="flex-mobile">
                 <div class="logo">
@@ -33,11 +33,11 @@
                     <div class="line1"></div>
                     <div class="line2"></div>
                 </div> <!-- mobile-menu-fechar -->
-                <nav>
+                <nav class="menu">
                     <ul>
                         <li><a href="./">Início</a></li>
-                        <li><a href="./">Design</a></li>
-                        <li><a href="./">Fale Conosco</a></li>
+                        <li><a href="#s-design">Design</a></li>
+                        <li><a href="#s-form">Fale Conosco</a></li>
                     </ul>
                 </nav> <!-- nav -->
                 <a href="https://shopee.com.br/camisa-de-futebol-liverpool-i.915599124.22496988977" target="_blank">
@@ -47,7 +47,7 @@
         </div>
     </header> <!-- header -->
 
-    <main>
+    <main id="main">
         <div class="main-content">
             <div class="main-content-text">
                 <div>
@@ -71,7 +71,7 @@
         </div> <!-- divisor-onda desktop-->
     </main> <!-- main -->
 
-    <section class="design">
+    <section id="s-design" class="design">
         
         <div class="divisor-onda-mobile">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 168" fill="none">
@@ -126,7 +126,7 @@
         </div> <!-- design-content -->
     </section> <!-- design -->
 
-    <section class="formulario">
+    <section id="s-form" class="formulario">
         <div class="formulario-content">
             <h1>Fale Conosco</h1>
             <form action="registro.php" method="get">
@@ -153,7 +153,7 @@
         </div>
     </section> <!-- formulario -->
 
-    <footer>
+    <footer id="footer">
         <div class="content-footer">
             <div class="redes-sociais">
                 <p>Nos siga e nunca ande sozinho!</p>
@@ -175,5 +175,6 @@
     </footer> <!-- footer -->
 
     <script src="./script.js"></script>
+    <script src="./scrollMenu.js"></script>
 </body>
 </html>
