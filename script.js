@@ -3,6 +3,22 @@ const navBar = document.querySelector('.nav-bar');
 const closeMenu = document.querySelector('.mobile-menu-fechar');
 const activeClass = 'active';
 
-mobileMenu.addEventListener("click", () => navBar.classList.toggle(activeClass));
+function setTopo(){
+    let static = window.pageYoffset
+    scrollTo(0, static);
+}
+
+
+mobileMenu.addEventListener("click", () => {
+    navBar.classList.add(activeClass);
+    
+});
+
+document.addEventListener('scroll', ()=>{ //bloqueia o scroll quando aberto a navbar no mobile
+    if(navBar.classList.contains(activeClass)) {
+        setTopo();
+    }
+});
 
 closeMenu.addEventListener("click", () => navBar.classList.remove('active'));
+
